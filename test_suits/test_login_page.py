@@ -1,9 +1,7 @@
 from front_office.login_page import LoginPage
-from front_office.main_page import MainPage
 from front_office.reset_password_page import ResetPasswordPage
 from data import Urls, Creds
 import pytest
-import time
 
 
 @pytest.mark.smoke
@@ -39,9 +37,6 @@ def test_user_can_login(browser):
     login_page = LoginPage(browser, Urls.LOGIN_PAGE)
     login_page.open()
     login_page.login_into_system(Creds.ADMIN_LOGIN, Creds.ADMIN_PASSWORD)
-    main_page = MainPage(browser, Urls.MAIN_PAGE)
-    # TODO: edit with Explicit Wait module
-    time.sleep(2)
-    main_page.should_be_main_page()
+
 
 

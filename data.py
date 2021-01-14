@@ -11,5 +11,5 @@ class Urls:
 
 class Creds:
     ADMIN_LOGIN = 'bintime@bintime.com'
-    ADMIN_PASSWORD = 'sample'
+    ADMIN_PASSWORD = r'n]\56ff-D9vK*GVU'
     SAMPLE_USER_EMAIL = 'sample@email.com'
