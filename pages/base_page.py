@@ -2,7 +2,6 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from pages.locators import LoginPageLocators as LpL
-from selenium.webdriver.common.by import By
 from data import Urls
 from data import Creds
 
@@ -14,6 +13,7 @@ class BasePage():
 
     def open(self):
         self.browser.get(self.url)
+        self.browser.maximize_window()
 
     def login_into_system(self, email, password):
         email_field = self.browser.find_element(*LpL.EMAIL_FIELD)
@@ -25,7 +25,7 @@ class BasePage():
         WebDriverWait(self.browser, 5).until(
             EC.url_to_be(Urls.MAIN_PAGE)
         )
-        assert 'import/request' in self.browser.current_url
+        assert 'import/request' in self.browser.current_url, "URL can't be reached"
 
     def is_element_present(self, how, what):
         try:

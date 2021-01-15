@@ -20,3 +20,9 @@ class ResetPasswordLocators:
 
 class MainPageLocators:
     GENERATE_FEED_BTN = (By.CSS_SELECTOR, '#import-templates')
+    MENU_DROPDOWN_MAIN = (By.CSS_SELECTOR, '.dropdown>.dropdown-toggle')
+    MENU_TEMPLATES_MGMT = (By.CSS_SELECTOR, '.dropdown.show ul>li:nth-child(1)')
+    MENU_PARTNERS_MGMT = (By.CSS_SELECTOR, '.dropdown.show ul>li:nth-child(3)')
+    MENU_USERS_MGMT = (By.CSS_SELECTOR, '.dropdown.show ul>li:nth-child(5)')
+    MENU_SETUP_SHEET = (By.CSS_SELECTOR, '.dropdown.show ul>li:nth-child(7)')
+    LOGOUT_BTN = (By.CSS_SELECTOR, '.logout-link')
