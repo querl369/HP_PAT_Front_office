@@ -1,6 +1,6 @@
 from pages.base_page import BasePage
-from pages.locators import LoginPageLocators as LpL
-from data import TextPresented
+from pages.locators import LoginPage as LpL
+from data import TextMainPage
 
 
 class LoginPage(BasePage):
@@ -9,7 +9,7 @@ class LoginPage(BasePage):
         self.should_be_login_text_above_the_form()
 
     def should_be_logo_text(self):
-        assert TextPresented.MAIN_LOGO in self.browser.find_element(*LpL.LOGO_TEXT).text, 'Logo text not present'
+        assert TextMainPage.MAIN_LOGO in self.browser.find_element(*LpL.LOGO_TEXT).text, 'Logo text not present'
 
     def should_be_login_text_above_the_form(self):
         assert self.is_element_present(*LpL.LOGIN_FORM_HEADER), 'Login form header not present'
@@ -28,16 +28,6 @@ class LoginPage(BasePage):
 
     def forgot_password_link_present(self):
         assert self.is_element_present(*LpL.FORGOT_PASSWORD_LINK), "Forgot password link not present"
-
-    # FIXME: Login user process moved to the base_page
-    # def fill_email_field(self, email='bintime@bintime.com'):
-    #     email_field = self.browser.find_element(*LpL.EMAIL_FIELD)
-    #     email_field.send_keys(email)
-    #
-    # FIXME: Login user process moved to the base_page
-    # def fill_password_field(self, password=''):
-    #     pass_field = self.browser.find_element(*LpL.PASSWORD_FIELD)
-    #     pass_field.send_keys(password)
 
     def click_remember_me_checkbox(self):
         checkbox = self.browser.find_element(*LpL.REMEMBER_BE_CHECKBOX)

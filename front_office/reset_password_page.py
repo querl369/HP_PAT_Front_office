@@ -1,5 +1,5 @@
 from pages.base_page import BasePage
-from pages.locators import ResetPasswordLocators as RpL
+from pages.locators import ResetPassword as RpL
 
 
 class ResetPasswordPage(BasePage):
@@ -12,8 +12,8 @@ class ResetPasswordPage(BasePage):
 
     # FIXME: figure out how to get text from disappearing warning
     def should_be_blank_email_warn(self):
-        assert 'Email cannot be blank' in self.is_element_present(*RpL.WARN_UNREG_USR).text, 'Blank email message not '\
-                                                                                             'present '
+        assert 'Email cannot be blank' in self.is_element_present(*RpL.WARN_UNREG_USR).text, ('Blank email message not '
+                                                                                              'presented')
 
     def should_be_reset_password_text_above_the_form(self):
         assert self.is_element_present(*RpL.RESET_PASSWORD_HEADER), '"Request password" text in header not present'

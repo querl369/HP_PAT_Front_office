@@ -1,7 +1,7 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from pages.locators import LoginPageLocators as LpL
+from pages.locators import LoginPage as LpL
 from data import Urls
 from data import Creds
 
