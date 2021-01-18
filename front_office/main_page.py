@@ -4,27 +4,21 @@ from selenium.webdriver.support import expected_conditions as EC
 from pages.locators import MainPage as Mp
 from data import TextMainPage as Tm, AssertionText as At, Urls
 import time
-from selenium.webdriver.common.by import By
 
 
 
 class MainPage(BasePage):
+    # MAIN elements on the page
+
+
     def should_be_main_page(self):
         assert Urls.MAIN_PAGE in self.browser.current_url, 'URL is incorrect'
 
-    # def should_be_menu_and_its_elements(self):
-    #     self.should_be_menu_dropdown()
-    #     self.menu_dropdown_click()
-    #     self.should_be_template_mgmt_in_menu()
-    #     self.should_be_partners_mgmt_in_menu()
-    #     self.should_be_user_mgmt_in_menu()
-    #     self.should_be_setup_request_in_menu()
-
+    # MENU dropdown methods block started
     def should_be_menu_dropdown(self):
-        WebDriverWait(self.browser, 5).until(EC.element_to_be_clickable(Mp.MENU_DROPDOWN_MAIN))
         assert self.is_element_present(*Mp.MENU_DROPDOWN_MAIN), At.ELEM + Tm.MENU_DROPDOWN_MAIN + At.NOT_PRESENTED
         assert Tm.MENU_DROPDOWN_MAIN in self.browser.find_element(*Mp.MENU_DROPDOWN_MAIN).text, (At.TEXT_IN_ELEM +
-                                                                                                 Tm.MENU_DROPDOWN_MAIN + At.NOT_PRESENTED)
+        Tm.MENU_DROPDOWN_MAIN + At.NOT_PRESENTED)
 
     def menu_dropdown_click(self):
         menu_dropdown = WebDriverWait(self.browser, 5).until(EC.element_to_be_clickable(Mp.MENU_DROPDOWN_MAIN))
@@ -32,7 +26,6 @@ class MainPage(BasePage):
         menu_dropdown.click()
 
     def should_be_template_mgmt_in_menu(self):
-        WebDriverWait(self.browser, 5).until(EC.element_to_be_clickable(Mp.MENU_TEMPLATES_MGMT))
         assert self.is_element_present(*Mp.MENU_TEMPLATES_MGMT), At.ELEM + Tm.MENU_TEMPLATES_MGMT + At.NOT_PRESENTED
         assert Tm.MENU_TEMPLATES_MGMT in self.browser.find_element(*Mp.MENU_TEMPLATES_MGMT).text, (At.TEXT_IN_ELEM +
         Tm.MENU_TEMPLATES_MGMT + At.NOT_PRESENTED)
@@ -63,11 +56,23 @@ class MainPage(BasePage):
         logout.click()
 
 
-    # def dropdown_menu_is_selectable(self):
-    #
-    #
-    # def search_fields_checked(self):
-    #
-    #
-    #
-    # def country_dropdown_text_presented(self):
+    # SEARCH block methods started
+    def should_be_country_dropdown_header(self):
+        assert Tm.COUNTRY_SEARCH in self.browser.find_element(*Mp.COUNTRY_SEARCH).text, (At.TEXT_IN_ELEM +
+                                                                        Tm.COUNTRY_SEARCH + At.NOT_PRESENTED)
+
+    def should_be_partner_name_header(self):
+        assert Tm.PARTNER_SEARCH in self.browser.find_element(*Mp.PARTNER_SEARCH).text, (At.TEXT_IN_ELEM +
+                                                                        Tm.PARTNER_SEARCH + At.NOT_PRESENTED)
+
+    def should_be_category_header(self):
+        assert Tm.CATEGORY_SEARCH in self.browser.find_element(*Mp.CATEGORY_SEARCH).text, (At.TEXT_IN_ELEM +
+                                                                        Tm.CATEGORY_SEARCH + At.NOT_PRESENTED)
+
+    def should_be_generated_by_header(self):
+        assert Tm.GENERATED_BY_SEARCH in self.browser.find_element(*Mp.GENERATED_BY_SEARCH).text, (At.TEXT_IN_ELEM +
+                                                                        Tm.GENERATED_BY_SEARCH + At.NOT_PRESENTED)
+
+    # def should_be_search_btn(self):
+    #     global search_btn = self.browser.find_element(*Mp.SEARCH_BTN)
+    #     assert
