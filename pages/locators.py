@@ -26,16 +26,16 @@ class MainPage:
     MENU_USERS_MGMT = (By.CSS_SELECTOR, '.dropdown.show ul>li:nth-child(5)')
     MENU_SETUP_SHEET = (By.CSS_SELECTOR, '.dropdown.show ul>li:nth-child(7)')
     LOGOUT_BTN = (By.CSS_SELECTOR, '.logout-link')
-    COUNTRY_SEARCH = '[for="locales-filter"]'
-    COUNTRY_SEARCH_DROPDOWN = '#select2-requestsearch-locales-container'
-    PARTNER_SEARCH = '[for="name-filter"]'
-    PARTNER_SEARCH_FIELD = '#select2-requestsearch-locales-container'
-    CATEGORY_SEARCH = '[for="tags-filter"]'
-    CATEGORY_SEARCH_FIELD = '[name="RequestSearch[tags]"]'
-    GENERATED_BY_SEARCH = '[for="userUid-filter"]'
-    GENERATED_BY_SEARCH_DROPDOWN = '#select2-GeneratedBy-container'
-    SEARCH_BTN = '.submit.btn.btn-success'
-    CLEAR_BTN = '.clearFilter.btn.btn-secondary'
-    GENERATE_BTN = '#import-templates'
-    COLUMNS_DROPDOWN = '.columnPicker.btn-group>#w2'
-    ITEMS_PER_PAGE_DEFAULT = '.pageLimiter.btn-group>#w0'
+    COUNTRY_SEARCH = (By.CSS_SELECTOR, '[for="locales-filter"]')
+    COUNTRY_SEARCH_DROPDOWN = (By.CSS_SELECTOR, '[id="select2-requestsearch-locales-container"]')
+    PARTNER_SEARCH = (By.CSS_SELECTOR, '[for="name-filter"]')
+    PARTNER_SEARCH_FIELD = (By.CSS_SELECTOR, '[name="RequestSearch[name]"]')
+    CATEGORY_SEARCH = (By.CSS_SELECTOR, '[for="tags-filter"]')
+    CATEGORY_SEARCH_FIELD = (By.CSS_SELECTOR, '[name="RequestSearch[tags]"]')
+    GENERATED_BY_SEARCH = (By.CSS_SELECTOR, '[for="userUid-filter"]')
+    GENERATED_BY_DROPDOWN = (By.CSS_SELECTOR, '#select2-GeneratedBy-container')
+    SEARCH_BTN = (By.CSS_SELECTOR, '.submit.btn.btn-success')
+    CLEAR_BTN = (By.CSS_SELECTOR, '.clearFilter.btn.btn-secondary')
+    GENERATE_BTN = (By.CSS_SELECTOR, '#import-templates')
+    COLUMNS_DROPDOWN = (By.CSS_SELECTOR, '.columnPicker.btn-group>#w2')
+    ITEMS_PER_PAGE_DEFAULT = (By.CSS_SELECTOR, '.pageLimiter.btn-group>#w0')
