@@ -2,6 +2,7 @@ from front_office.main_page import MainPage
 from front_office.login_page import LoginPage
 from data import Urls, Creds
 import pytest
+import time
 
 
 @pytest.mark.smoke

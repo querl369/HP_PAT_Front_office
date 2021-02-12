@@ -1,17 +1,17 @@
-from pages.base_page import BasePage
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support import expected_conditions as EC
-from pages.locators import MainPage as Mp
-from data import TextMainPage as Tm, AssertionText as At, Urls
 import time
+
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
+from data import TextMainPage as Tm, Urls
+from pages.base_page import BasePage
+from pages.locators import MainPage as Mp
 
 
 class MainPage(BasePage):
-    """ MAIN elements on the page"""
 
+    """ MAIN elements on the page"""
     def should_be_main_page(self):
         assert Urls.MAIN_PAGE in self.browser.current_url, 'URL is incorrect'
 
@@ -40,8 +40,9 @@ class MainPage(BasePage):
         assert self.text_assert(*Mp.ITEMS_PER_PAGE_DEFAULT), self.no_text(Tm.ITEMS_PER_PAGE_DEFAULT)
         # print(self.text_assert(*Mp.ITEMS_PER_PAGE_DEFAULT))
 
-    """ MAIN elements on the page"""
+    """------------------------------------"""
     """ MENU dropdown methods block started"""
+    """------------------------------------"""
 
     def should_be_menu_dropdown(self):
         assert self.is_element_present(*Mp.MENU_DROPDOWN_MAIN), self.no_elem(Tm.MENU_DROPDOWN_MAIN)
@@ -77,7 +78,9 @@ class MainPage(BasePage):
         time.sleep(1)
         logout.click()
 
+    """-----------------------------------------"""
     """SEARCH BLOCK METHODS STARTED ON MAIN PAGE"""
+    """-----------------------------------------"""
 
     def should_be_search_block(self):
         self.should_be_country_dropdown()
@@ -92,15 +95,10 @@ class MainPage(BasePage):
         assert self.is_element_present(*Mp.COUNTRY_SEARCH_DROPDOWN), self.no_elem(Tm.COUNTRY_SEARCH_DROPDOWN)
 
     def country_dropdown_click(self):
+        time.sleep(1)
         country_dropdown = WebDriverWait(self.browser, 5).until(EC.element_to_be_clickable(Mp.COUNTRY_SEARCH_DROPDOWN))
         country_dropdown.click()
 
-    # def country_dropdown_sample_element_can_be_selected(self):
-    #     search_field = self.browser.find_element(By.CSS_SELECTOR, 'select2-search__field')
-    #     search_field.click()
-    #     search_field.send_keys('Germany')
-    #     search_field.send_keys(Keys.RETURN)
-    #     assert 'Germany' in self.text_assert(*Mp.COUNTRY_SEARCH_DROPDOWN), self.no_text(Tm.COUNTRY_SEARCH_DROPDOWN)
 
     def should_be_partner_name_field(self):
         assert self.text_assert(*Mp.PARTNER_SEARCH), self.no_text(Tm.PARTNER_SEARCH)
@@ -117,3 +115,14 @@ class MainPage(BasePage):
 
     def should_be_generate_btn(self):
         assert self.is_element_present(*Mp.GENERATE_BTN), self.no_elem(Tm.GENERATE_BTN)
+
+    def country_dropdown_sample_element_can_be_selected(self):
+        list_of_countries = self.browser.find_element(*Mp.COUNTRY_SEARCH_HTML_LIST)
+        all_countries = list_of_countries.find_elements(*Mp.COUNTRY_SEARCH_ITEMS)
+        new_list = [country.text for country in all_countries]
+        print(new_list)
+        assert len(new_list) > 1, 'Country dropdown is empty'
+
+
+
+

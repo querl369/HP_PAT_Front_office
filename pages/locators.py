@@ -19,15 +19,20 @@ class ResetPassword:
 
 
 class MainPage:
-    GENERATE_FEED_BTN = (By.CSS_SELECTOR, '#import-templates')
+    """MENU Navigation"""
     MENU_DROPDOWN_MAIN = (By.CSS_SELECTOR, '.dropdown>.dropdown-toggle')
     MENU_TEMPLATES_MGMT = (By.CSS_SELECTOR, '.dropdown.show ul>li:nth-child(1)')
     MENU_PARTNERS_MGMT = (By.CSS_SELECTOR, '.dropdown.show ul>li:nth-child(3)')
     MENU_USERS_MGMT = (By.CSS_SELECTOR, '.dropdown.show ul>li:nth-child(5)')
     MENU_SETUP_SHEET = (By.CSS_SELECTOR, '.dropdown.show ul>li:nth-child(7)')
     LOGOUT_BTN = (By.CSS_SELECTOR, '.logout-link')
+
+    """SEARCH block dropdowns/fields"""
     COUNTRY_SEARCH = (By.CSS_SELECTOR, '[for="locales-filter"]')
-    COUNTRY_SEARCH_DROPDOWN = (By.CSS_SELECTOR, '[id="select2-requestsearch-locales-container"]')
+    COUNTRY_SEARCH_DROPDOWN = (By.CSS_SELECTOR, '[data-select2-id="3"]')
+    COUNTRY_SEARCH_UK_COUNTRY = (By.CSS_SELECTOR, '#select2-requestsearch-locales-result-4sc7-en-GB')
+    COUNTRY_SEARCH_HTML_LIST = (By.CSS_SELECTOR, 'ul.select2-results__options')
+    COUNTRY_SEARCH_ITEMS = (By.TAG_NAME, 'li')
     PARTNER_SEARCH = (By.CSS_SELECTOR, '[for="name-filter"]')
     PARTNER_SEARCH_FIELD = (By.CSS_SELECTOR, '[name="RequestSearch[name]"]')
     CATEGORY_SEARCH = (By.CSS_SELECTOR, '[for="tags-filter"]')
@@ -36,6 +41,10 @@ class MainPage:
     GENERATED_BY_DROPDOWN = (By.CSS_SELECTOR, '#select2-GeneratedBy-container')
     SEARCH_BTN = (By.CSS_SELECTOR, '.submit.btn.btn-success')
     CLEAR_BTN = (By.CSS_SELECTOR, '.clearFilter.btn.btn-secondary')
+
+    """FEED generation button link"""
     GENERATE_BTN = (By.CSS_SELECTOR, '#import-templates')
+
+    """GRID navigation buttons"""
     COLUMNS_DROPDOWN = (By.CSS_SELECTOR, '.columnPicker.btn-group>#w2')
     ITEMS_PER_PAGE_DEFAULT = (By.CSS_SELECTOR, '.pageLimiter.btn-group>#w0')
