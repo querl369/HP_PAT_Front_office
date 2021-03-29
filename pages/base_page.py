@@ -2,8 +2,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from pages.locators import LoginPage as Lp, MainPage as Mp
-from data import AssertionText as At, Urls
-
+from data import AssertionText as At, Urls, TelegramBot
+import requests
 
 
 class BasePage:
@@ -48,3 +48,7 @@ class BasePage:
     def text_assert(self, how, what):
         return self.browser.find_element(how, what).text
 
+    @staticmethod
+    def send_test_case_to_telegram(case_name):
+        payload_tuples = [TelegramBot.TESTCHATID, ('text', case_name + ' test case STARTED')]
+        return requests.post(TelegramBot.HPATBOT, data=payload_tuples)

@@ -43,3 +43,6 @@ class AssertionText:
     NOT_PRESENTED = ' is not presented'
     TEXT_IN_ELEM = 'Text in the element'
 
+class TelegramBot:
+    HPATBOT = 'https://api.telegram.org/bot1592884711:AAGh9IooYd4P0VO-QfwhouhfxxEMnehbqzo/sendMessage'
+    TESTCHATID = ('chat_id', '-1001392266966')

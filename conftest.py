@@ -1,4 +1,6 @@
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
 import pytest
 from selenium.webdriver.chrome.options import Options
 
@@ -17,12 +19,12 @@ def browser(request):
     if browser_name == "chrome":
         options = Options()
         options.add_experimental_option('prefs', {'intl.accept_languages': user_language})
-        browser = webdriver.Chrome(options=options)
+        browser = webdriver.Chrome(ChromeDriverManager().install(), options=options)
         print(f"\nstart chrome browser for test.. with {user_language} language")
     elif browser_name == "firefox":
         fp = webdriver.FirefoxProfile()
         fp.set_preference("intl.accept_languages", user_language)
-        browser = webdriver.Firefox(firefox_profile=fp)
+        browser = webdriver.Firefox(executable_path=GeckoDriverManager().install(), firefox_profile=fp)
         print(f"\nstart firefox browser for test.. with {user_language} language")
 
     yield browser
