@@ -1,4 +1,3 @@
-import time
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -50,7 +49,6 @@ class MainPage(BasePage):
 
     def menu_dropdown_click(self):
         menu_dropdown = WebDriverWait(self.browser, 5).until(EC.element_to_be_clickable(Mp.MENU_DROPDOWN_MAIN))
-        time.sleep(1)
         menu_dropdown.click()
 
     def should_be_template_mgmt_in_menu(self):
@@ -75,7 +73,6 @@ class MainPage(BasePage):
 
     def logout_btn_click(self):
         logout = WebDriverWait(self.browser, 5).until(EC.element_to_be_clickable(Mp.LOGOUT_BTN))
-        time.sleep(1)
         logout.click()
 
     """-----------------------------------------"""
@@ -95,7 +92,6 @@ class MainPage(BasePage):
         assert self.is_element_present(*Mp.COUNTRY_SEARCH_DROPDOWN), self.no_elem(Tm.COUNTRY_SEARCH_DROPDOWN)
 
     def country_dropdown_click(self):
-        time.sleep(1)
         country_dropdown = WebDriverWait(self.browser, 5).until(EC.element_to_be_clickable(Mp.COUNTRY_SEARCH_DROPDOWN))
         country_dropdown.click()
 

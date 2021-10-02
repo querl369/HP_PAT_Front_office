@@ -1,0 +1,67 @@
+1626174613128	geckodriver	INFO	Listening on 127.0.0.1:59165
+1626174614138	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqxx9ua"
+1626174615034	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqxx9ua/search.json.mozlz4", (void 0)))
+1626174617517	Marionette	INFO	Listening on port 34003
+1626174617619	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12904: TypeError: studio.Enabler is undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+1626174633906	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12226: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+1626174637858	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+1626174642809	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12229: ReferenceError: common is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12241: ReferenceError: custom is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8531744895256231936/index.html#t=8046777321167332759&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 12222: ReferenceError: common is not defined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1626174656934	Marionette	INFO	Stopped listening on port 34003
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

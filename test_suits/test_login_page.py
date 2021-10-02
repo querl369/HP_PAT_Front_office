@@ -36,7 +36,7 @@ def test_user_can_got_to_forgot_pass_link(browser):
 def test_user_can_login(browser):
     login_page = LoginPage(browser, Urls.LOGIN_PAGE)
     login_page.open()
-    login_page.login_into_system(Creds.ADMIN_LOGIN, Creds.ADMIN_PASSWORD)
+    login_page.login_into_system(Creds.LOGIN, Creds.PASSWORD)
 
 
 

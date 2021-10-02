@@ -1,18 +1,22 @@
 
 
 class Urls:
-    LOGIN_PAGE = 'https://test-hppat.bintime.com/login'
-    MAIN_PAGE = 'https://test-hppat.bintime.com/import/request'
-    TEMPLATES_MANAGEMENT_ = 'https://test-hppat.bintime.com/import/template'
-    PARTNERS_MANAGEMENT = 'https://test-hppat.bintime.com/partners/partners'
-    USERS_MANAGEMENT = 'https://test-hppat.bintime.com/user/user'
-    RESET_PASSWORD = 'https://test-hppat.bintime.com/reset-password-request'
+    BASE_URL = "https://hppat.bintime.com"
+    LOGIN_PAGE = f'{BASE_URL}/login'
+    MAIN_PAGE = f'{BASE_URL}/import/request'
+    TEMPLATES_MANAGEMENT_ = f'{BASE_URL}/import/template'
+    PARTNERS_MANAGEMENT = f'{BASE_URL}/partners/partners'
+    USERS_MANAGEMENT = f'{BASE_URL}/user/user'
+    RESET_PASSWORD = f'{BASE_URL}/reset-password-request'
+    USER_CREATE_PAGE = f'{BASE_URL}/user/user/create'
+    TEMP_MAIL = 'https://temp-mail.io/en/'
 
 
 class Creds:
-    ADMIN_LOGIN = 'bintime@bintime.com'
-    ADMIN_PASSWORD = r'n]\56ff-D9vK*GVU'
+    LOGIN = 'bintime.yemets@gmail.com'
+    PASSWORD = r'' #type in the password here
     SAMPLE_USER_EMAIL = 'sample@email.com'
+    TEMP_MAIL = ''
 
 
 class TextMainPage:
